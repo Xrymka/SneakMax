@@ -32,6 +32,7 @@
     margin-bottom: var(--second-offset);
     max-width: 50%;
     font: 700 36px / 140% var(--font-family);
+    color: var(--color-white);
   }
 
   &__desc {
@@ -39,5 +40,6 @@
     margin-bottom: var(--main-offset);
     max-width: calc(50% - 100px);
     font: var(--middle-font);
+    color: var(--color-white);
   }
 }
