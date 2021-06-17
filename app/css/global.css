@@ -10,6 +10,7 @@
   --color-bg: #fff4ee;
   --color-cameo: #dbbba9;
   --color-gray: #b2b5bb;
+  --color-jumbo: #808080;
   --grid-gap: 20px;
   --main-offset: 40px;
   --second-offset: 20px;
@@ -112,6 +113,16 @@ a {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0); }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -127,6 +138,21 @@ a {
     background-color: var(--color-accent); }
     .btn--primary:hover {
       background-color: var(--color-accent-hover); }
+  .btn--secondary {
+    margin-bottom: var(--second-offset);
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-main); }
+    .btn--secondary:hover {
+      background-color: var(--color-main-hover); }
+  .btn--thirdly {
+    border: 1px solid var(--color-main);
+    padding: 13px 45px;
+    color: var(--color-main);
+    background-color: transparent; }
+    .btn--thirdly:hover {
+      color: var(--color-white);
+      background-color: var(--color-main); }
 
 .title {
   margin: 0;

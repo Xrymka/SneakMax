@@ -6,6 +6,9 @@
   }
 
   &__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-column: 9 span;
   }
 
@@ -29,7 +32,7 @@
     font: var(--middle-font);
   }
 
-  &__prop {
+  &__prop-inner {
     margin-bottom: var(--second-offset);
   }
 
@@ -42,6 +45,12 @@
     border-radius: 4px;
     padding: var(--second-offset);
     background-color: var(--color-bg);
+
+    &__btns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &-price {
@@ -81,31 +90,47 @@
       }
     }
   }
-}
 
-.noUi-horizontal {
-  height: 2px;
-}
+  &__more {
+    margin-top: var(--big-offset);
+    margin-bottom: var(--second-offset);
+  }
 
-.noUi-horizontal .noUi-handle {
-  width: 3px;
-  height: 18px;
-}
+  .noUi-horizontal {
+    height: 2px;
+  }
 
-.noUi-handle {
-  border: none;
-  border-radius: none;
-  background: var(--color-main);
-  cursor: default;
-  box-shadow: none;
-}
+  .noUi-target {
+    border: none;
+    box-shadow: none;
+    background-color: var(--color-main);
+  }
 
-.noUi-connect {
-  background-color: var(--volor-main);
-}
+  .noUi-connect {
+    background-color: var(--color-main);
+  }
 
-.noUi-target {
-  border: none;
-  box-shadow: none;
-  background-color: var(--volor-main);
+  .noUi-horizontal .noUi-handle {
+    top: -8px;
+    width: 3px;
+    height: 18px;
+  }
+
+  .noUi-handle {
+    right: -2px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: none;
+    background-color: var(--color-main);
+    cursor: pointer;
+  }
+
+  .noUi-handle::after,
+  .noUi-handle::before {
+    display: none;
+  }
+
+  .noUi-handle-lower {
+    right: -3px;
+  }
 }
