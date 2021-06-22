@@ -137,7 +137,7 @@
     width: 3px;
     height: 18px; }
   .catalog .noUi-handle {
-    right: -2px;
+    right: 0;
     border: none;
     border-radius: 100px;
     box-shadow: none;
@@ -288,6 +288,85 @@
     display: block;
     font: var(--middle-font); }
 
+.faq {
+  padding: var(--big-offset); }
+  .faq__list {
+    margin: 0 auto;
+    max-width: 880px; }
+
+.faq-accordion {
+  border-top: 1px solid var(--color-main);
+  border-bottom: 1px solid var(--color-main); }
+  .faq-accordion__icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/cross.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-out; }
+  .faq-accordion__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 100%;
+    font: var(--middle-regular);
+    text-align: left;
+    color: var(--color-main);
+    background-color: transparent;
+    cursor: pointer; }
+  .faq-accordion__content {
+    overflow: hidden;
+    padding-right: 70px;
+    padding-bottom: 0;
+    max-height: 0;
+    box-sizing: content-box;
+    font: var(--middle-book);
+    color: rgba(36, 36, 36, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    will-change: max-height; }
+  .faq-accordion:not(:first-child) {
+    margin-top: -1px; }
+
+.accordion__control {
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer; }
+
+.open .faq-accordion__icon {
+  transform: rotate(90deg); }
+
+.open .faq-accordion__content {
+  padding-bottom: 18px;
+  opacity: 1; }
+
+.contacts {
+  padding: var(--big-offset) 0;
+  color: var(--color-main);
+  background-color: #f3f6f6; }
+  .contacts__title {
+    margin-bottom: var(--big-offset); }
+  .contacts__item {
+    font-style: normal; }
+  .contacts__subtitle {
+    margin: 0;
+    margin-bottom: var(--main-offset);
+    font: var(--small-font);
+    text-transform: uppercase;
+    color: var(--color-gray); }
+  .contacts__phone {
+    display: inline-block;
+    margin-bottom: var(--small-offset);
+    font: var(--middle-high-bold);
+    color: var(--color-main); }
+  .contacts__address {
+    display: block;
+    margin-bottom: var(--main-offset); }
+
 .nav__list {
   display: flex;
   align-self: center; }
@@ -397,5 +476,21 @@
     padding: 17px 5px;
     font: var(--middle-font);
     text-align: center; }
+
+.social {
+  display: flex; }
+  .social__item:not(:last-child) {
+    margin-right: var(--second-offset); }
+  .social__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .social__link--vk {
+      background-image: url("../img/vk.svg"); }
+    .social__link--insta {
+      background-image: url("../img/insta.svg"); }
 
 /*# sourceMappingURL=main.css.map */
