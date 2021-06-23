@@ -19,6 +19,46 @@ accordions.forEach(function (el) {
     }
   });
 });
+// const insta = document.querySelector('.instagram__content');
+// (function () {
+//   new InstagramFeed({
+//     'username': 'max.denaro',
+//     'display_profile': false,
+//     'display_biography': false,
+//     'display_gallery': true,
+//     'display_captions': true,
+//     'callback': function(data){
+//       let instaArray = data.edge_owner_to_timeline_media.edges;
+//       const newArray = instaArray.slice(0, 5);
+//       for (let item of newArray) {
+//         let element = item.node;
+//         insta.insertAdjacentHTML('afterbegin', `
+//           <article class="insta__item">
+//             <a href="https://www.instagram.com/p/${element.shortcode}/" target="_blank">
+//               <img src="${element.thumbnail_src}"
+//                 alt="${element.accessibility_caption}">
+//             </a>
+//           </article>
+//         `);
+//       }
+//     },
+//     'styling': false
+//   });
+// })();
+"use strict";
+"use strict";
+
+ymaps.ready(init);
+
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    center: [55.76, 37.64],
+    // Уровень масштабирования. Допустимые значения:
+    // от 0 (весь мир) до 19.
+    zoom: 7
+  });
+}
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

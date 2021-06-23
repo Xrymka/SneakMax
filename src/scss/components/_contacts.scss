@@ -3,6 +3,11 @@
   color: var(--color-main);
   background-color: #f3f6f6;
 
+  &__container {
+    display: flex;
+    align-items: start;
+  }
+
   &__title {
     margin-bottom: var(--big-offset);
   }
@@ -26,8 +31,18 @@
     color: var(--color-main);
   }
 
+  &__text {
+    margin-right: var(--second-offset);
+    width: calc(100% - (680px + var(--second-offset)));
+  }
+
   &__address {
     display: block;
     margin-bottom: var(--main-offset);
+  }
+
+  &__map {
+    width: 680px;
+    height: 500px;
   }
 }

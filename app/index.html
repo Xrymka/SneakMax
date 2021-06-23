@@ -414,14 +414,27 @@
   <div class="container contacts__container">
     <div class="contacts__text">
       <h2 class="title contacts__title">Контакты</h2>
-      <address class="contacts__item">
-        <h3 class="contacts__subtitle">Главный офис</h3>
+      <div class="contacts__item">
+        <h3 class="contacts__subtitle">
+          Главный офис
+          <span class="tooltip">
+            <button class="tooltip__btn btn-reset" aria-describedby="office" aria-label="Описание адреса">
+              <svg>
+                <use xlink:href="img/sprite.svg#tooltip"></use>
+              </svg>
+            </button>
+            <span class="tooltip__txt" role="tooltip" id="office">
+              <span class="visually-hidden">Тултип:</span>
+              Адрес и&nbsp;телефон для корреспонденции, инвесторов. Вопросы о&nbsp;доставке, качестве обслуживания и&nbsp;товара просьба задавать в&nbsp;отдел продаж
+            </span>
+          </span>
+        </h3>
         <a href="tel:+78007898989" class="contacts__phone">+7 800 789 89 89</a>
         <span class="contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</span>
         <h3 class="contacts__subtitle">Отдел продаж</h3>
         <a href="tel:+78007898989" class="contacts__phone">+7 800 789 89 89</a>
         <span class="contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</span>
-      </address>
+      </div>
       <ul class="list-reset social">
         <li class="social__item">
           <a href="#" class="social__link social__link--vk" aria-label="Мы вКонтакте" target="_blank"></a>
@@ -435,15 +448,52 @@
   </div>
 </section>
 
-        
+        <section class="insta">
+  <h2 class="visually-hidden">Форма и инстаграм-лента</h2>
+  <div class="container insta__container">
+    <div class="insta__left">
+      <form action="#" class="callback-form">
+        <h3 class="title insta__title">Есть вопросы?</h3>
+        <p class="insta__descr">Заполните форму и&nbsp;наш менеджер свяжется с&nbsp;вами</p>
+        <input type="text" class="input insta__input" placeholder="Ваше имя">
+        <input type="tel" class="input insta__input" placeholder="Номер телефона">
+        <button class="btn btn-reset btn--primary insta__btn">Отправить</button>
+      </form>
+    </div>
+    <div class="insta__right">
+      <a href="#" class="insta__link" target="_blank">
+        <img src="img/instagram.png" alt="Логотип инстаграма">
+      </a>
+      <div class="insta__content"></div>
+    </div>
+  </div>
+</section>
+
       </main>
     <footer class="footer">
-  <div class="container"></div>
+  <div class="container footer__container">
+    <div class="footer__left">
+      <a class="logo footer__logo">SneakMax</a>
+    </div>
+    <div class="footer__right">
+      <nav class="nav footer__nav">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Подбор товара</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Наша команда</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </footer>
 
     
   </div>
   <script src="js/vendor.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
 
