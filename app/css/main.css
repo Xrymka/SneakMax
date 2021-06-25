@@ -538,7 +538,7 @@
     .product__image img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 293px;
       -o-object-fit: cover;
       object-fit: cover; }
   .product__title {
@@ -598,5 +598,8 @@
       background-image: url("../img/vk.svg"); }
     .social__link--insta {
       background-image: url("../img/insta.svg"); }
+
+.prod-modal {
+  width: 1140px; }
 
 /*# sourceMappingURL=main.css.map */
